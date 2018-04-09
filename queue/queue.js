@@ -1,12 +1,12 @@
-class Stack {
-  constructor() {
+class Queue {
+  contructor() {
     this.items = [];
   }
-  push(element) {
+  enqueue(element) {
     this.items.push(element);
   }
-  pop() {
-    return this.items.pop();
+  dequeue() {
+    return this.items.shift();
   }
   size() {
     return this.items.length;
@@ -14,8 +14,8 @@ class Stack {
   isEmpty() {
     return this.items.length === 0;
   }
-  peek() {
-    return this.items[this.items.length - 1];
+  front() {
+    return this.items[0];
   }
   print() {
     return this.items.toString;
